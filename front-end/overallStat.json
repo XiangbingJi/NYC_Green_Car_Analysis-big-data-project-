@@ -1,0 +1,194 @@
+[
+    {
+        "timezone": 0, 
+        "freq": {
+            "Brooklyn": 11116, 
+            "Manhattan": 3899, 
+            "Queens": 14370
+        }
+    }, 
+    {
+        "timezone": 1, 
+        "freq": {
+            "Brooklyn": 19109, 
+            "Manhattan": 4372, 
+            "Queens": 10694
+        }
+    }, 
+    {
+        "timezone": 2, 
+        "freq": {
+            "Brooklyn": 14905, 
+            "Manhattan": 19967, 
+            "Queens": 19967
+        }
+    }, 
+    {
+        "timezone": 3, 
+        "freq": {
+            "Brooklyn": 10380, 
+            "Manhattan": 7717, 
+            "Queens": 3287
+        }
+    }, 
+    {
+        "timezone": 4, 
+        "freq": {
+            "Brooklyn": 3461, 
+            "Manhattan": 5785, 
+            "Queens": 5785
+        }
+    }, 
+    {
+        "timezone": 5, 
+        "freq": {
+            "Brooklyn": 4532, 
+            "Manhattan": 3842, 
+            "Queens": 4115
+        }
+    }, 
+    {
+        "timezone": 6, 
+        "freq": {
+            "Brooklyn": 6336, 
+            "Manhattan": 5907, 
+            "Queens": 3255
+        }
+    }, 
+    {
+        "timezone": 7, 
+        "freq": {
+            "Brooklyn": 13906, 
+            "Manhattan": 4189, 
+            "Queens": 6602
+        }
+    }, 
+    {
+        "timezone": 8, 
+        "freq": {
+            "Brooklyn": 12522, 
+            "Manhattan": 16165, 
+            "Queens": 6999
+        }
+    }, 
+    {
+        "timezone": 9, 
+        "freq": {
+            "Brooklyn": 15529, 
+            "Manhattan": 19790, 
+            "Queens": 7525
+        }
+    }, 
+    {
+        "timezone": 10, 
+        "freq": {
+            "Brooklyn": 14066, 
+            "Manhattan": 2719, 
+            "Queens": 9217
+        }
+    }, 
+    {
+        "timezone": 11, 
+        "freq": {
+            "Brooklyn": 17802, 
+            "Manhattan": 20710, 
+            "Queens": 1959
+        }
+    }, 
+    {
+        "timezone": 12, 
+        "freq": {
+            "Brooklyn": 14095, 
+            "Manhattan": 18832, 
+            "Queens": 4268
+        }
+    }, 
+    {
+        "timezone": 13, 
+        "freq": {
+            "Brooklyn": 15664, 
+            "Manhattan": 20541, 
+            "Queens": 8086
+        }
+    }, 
+    {
+        "timezone": 14, 
+        "freq": {
+            "Brooklyn": 14674, 
+            "Manhattan": 21438, 
+            "Queens": 14895
+        }
+    }, 
+    {
+        "timezone": 15, 
+        "freq": {
+            "Brooklyn": 16785, 
+            "Manhattan": 15698, 
+            "Queens": 4061
+        }
+    }, 
+    {
+        "timezone": 16, 
+        "freq": {
+            "Brooklyn": 16670, 
+            "Manhattan": 18013, 
+            "Queens": 5765
+        }
+    }, 
+    {
+        "timezone": 17, 
+        "freq": {
+            "Brooklyn": 3595, 
+            "Manhattan": 26423, 
+            "Queens": 23086
+        }
+    }, 
+    {
+        "timezone": 18, 
+        "freq": {
+            "Brooklyn": 22066, 
+            "Manhattan": 24914, 
+            "Queens": 6773
+        }
+    }, 
+    {
+        "timezone": 19, 
+        "freq": {
+            "Brooklyn": 20095, 
+            "Manhattan": 23587, 
+            "Queens": 16654
+        }
+    }, 
+    {
+        "timezone": 20, 
+        "freq": {
+            "Brooklyn": 21397, 
+            "Manhattan": 9724, 
+            "Queens": 17757
+        }
+    }, 
+    {
+        "timezone": 21, 
+        "freq": {
+            "Brooklyn": 6631, 
+            "Manhattan": 17500, 
+            "Queens": 15844
+        }
+    }, 
+    {
+        "timezone": 22, 
+        "freq": {
+            "Brooklyn": 11933, 
+            "Manhattan": 15839, 
+            "Queens": 15243
+        }
+    }, 
+    {
+        "timezone": 23, 
+        "freq": {
+            "Brooklyn": 9251, 
+            "Manhattan": 14490, 
+            "Queens": 13464
+        }
+    }
+]

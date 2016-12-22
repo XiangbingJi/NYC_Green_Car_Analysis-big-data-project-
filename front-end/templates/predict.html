@@ -1,0 +1,45 @@
+<div class = "predict">
+<div class="md-padding" id = "selectionbar2" ng-cloak>
+  <div>
+    <h1 class="md-title">Pick a time below</h1>
+    <div layout="row">
+      <md-input-container>
+        <label>Time zone</label>
+        <md-select ng-model="selectedItem" md-selected-text="getSelectedText()">
+          <md-optgroup label="items">
+            <md-option ng-value="item" ng-repeat="item in items"> {{item}}</md-option>
+          </md-optgroup>
+        </md-select>
+      </md-input-container>
+    </div>
+  </div>
+</div>
+
+<div layout="column" ng-cloak class="md-inline-form">
+  <h1 class="md-title">Find your location by drag the marker on Google Map</h1>
+  <md-content md-theme="docs-dark" layout-gt-sm="row" layout-padding>
+    <div>
+      <md-input-container>
+        <label>latitude</label>
+        <input name = "latitude" ng-model="latitude">
+      </md-input-container>
+
+      <md-input-container>
+        <label>longitude</label>
+        <input name = "longitude" ng-model="longitude">
+      </md-input-container>
+    </div>
+  </md-content>
+</div>
+<div id = "pickups"> <strong>Predicted pickups in the vicinity</strong>: {{pickups}} </div>
+<md-button class="md-raised md-primary" ng-click = "submit()">Submit</md-button>
+
+</div>
+
+<div id="map"  style="border: 2px solid #3872ac;">    
+    <ng-map center="40.791,-73.947" zoom="11" on-click="getpos($event);">
+      <marker position="{{latlng}}" title="Hello World!" on-dragend="getpos($event)" 
+       animation="Animation.BOUNCE" animation="DROP" draggable="true"></marker>
+    </ng-map>
+     {{latlng}}
+ </div>

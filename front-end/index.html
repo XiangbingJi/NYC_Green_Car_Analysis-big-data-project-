@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This stylesheet contains specific styles for displaying the map
+         on this page. Replace it with your own styles as described in the
+         documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+         <!-- Angular Material Library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script src="/bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js"></script>
+
+</head>
+  
+  <body ng-app = "NYCTaxiAPP">
+
+
+    <div ng-controller="AppCtrl" ng-cloak>
+      <md-content>
+        <br>
+        <md-toolbar class="md-hue-2">
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+
+            <h2 flex md-truncate>NYC smart taxi system</h2>
+
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+    </div>
+
+    <div ng-controller="AppCtrl" ng-cloak>
+      <md-content class="md-padding" id = 'navbar'>
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+          <md-nav-item md-nav-click="goto('page1');redirect1()" name="page1">Introduction</md-nav-item>
+          <md-nav-item md-nav-click="goto('page2');redirect2()" name="page2">Pickup Predictions</md-nav-item>
+          <md-nav-item md-nav-click="goto('page3');redirect3()" name="page3">D3 visualization</md-nav-item>
+          <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+          <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+          <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+          -->
+        </md-nav-bar>
+        <div class="ext-content">
+          <div ng-view></div>
+        </div>
+      </md-content>
+    </div>
+
+    <!--script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 40.791, lng: -73.947 },
+        zoom: 11
+      });
+
+      // Get the earthquake data (JSONP format)
+      // This feed is a copy from the USGS feed, you can find the originals here:
+      //   http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+      var script = document.createElement('script');
+      script.setAttribute('src',
+        '/smalljson/smalljson0.json');
+      document.getElementsByTagName('head')[0].appendChild(script);
+    }
+
+    // Defines the callback function referenced in the jsonp file.
+    function eqfeed_callback(data) {
+      map.data.addGeoJson(data);
+    }
+    </script-->
+
+    <!--script type="text/javascript">
+         var map;
+          console.log('debug1');
+          window.initMap = function() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 10,
+              center: {lat: 40.791, lng: -73.947},
+              mapTypeId: 'terrain'
+            });
+
+            // Create a <script> tag and set the USGS URL as the source.
+            var script = document.createElement('script');
+
+            // This example uses a local copy of the GeoJSON stored at
+            // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+
+
+            var number = document.getElementById('myField').value;
+            console.log(number);
+            script.src = '/javascript/testdata/Output17c4.json';
+            document.getElementsByTagName('head')[0].appendChild(script);
+
+            map.data.setStyle(function(feature) {
+              var magnitude = feature.getProperty('mag');
+              return {
+                icon: getCircle(magnitude)
+              };
+            });
+          }
+
+          function getCircle(magnitude) {
+            return {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: 'red',
+              fillOpacity: .2,
+              scale: magnitude,
+              strokeColor: 'white',
+              strokeWeight: .5
+            };
+          }
+
+          function eqfeed_callback(results) {
+            map.data.addGeoJson(results);
+          }
+    </script-->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/router.js"></script>
+    <script src="/javascript/controllers/intro.js"></script>
+    <script src="/javascript/controllers/predict.js"></script>
+    <script src="/javascript/controllers/charts.js"></script>
+  </body>
+</html>

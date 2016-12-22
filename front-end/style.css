@@ -1,0 +1,92 @@
+html body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+}
+#blank{
+  height: 1000px;
+  width: 100%;
+}
+#map { 
+  height: 300px;
+  width: 50%; 
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+#navbar {
+  margin-left: 0%
+}
+.md-padding{
+  margin-left: 42%;
+}
+
+#dashboard{
+  margin-left: 5%;
+  margin-top: 0px;
+}
+#selectionbar1,#selectionbar2{
+  margin-left:42%;
+  display: inline-block;
+}
+.md-inline-form{
+  margin-left: 33%;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+.md-inline-form h1{
+  position: relative;
+  left: 0px;
+}
+.predict button {
+  margin-left: 46%;
+  display: inline-block;
+}
+#pickups {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 40%
+}
+
+
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+  color: white; 
+}
+
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:blue; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
